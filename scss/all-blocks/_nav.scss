@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 32px;
+}
+
+.nav__links {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #83888F;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover{
+        color: #333D4B;
+    }
+}

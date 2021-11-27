@@ -1,0 +1,80 @@
+.headquarters .container {
+  margin-bottom: 168px;
+  padding: 0 85px;
+}
+
+.headquarters__heading {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.headquarters__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.headquarters__item{
+    width: 285px;
+}
+
+.headquarters__item + .headquarters__item {
+  margin-left: 95px;
+}
+
+.headquarters__item--first::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 49px;
+  margin-bottom: 46px;
+  background-image: url(/img/uk.svg);
+  background-repeat: no-repeat;
+}
+
+.headquarters__item--second::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 52px;
+  margin-bottom: 46px;
+  background-image: url(/img/canada.svg);
+  background-repeat: no-repeat;
+}
+
+.headquarters__item--third::before {
+  display: block;
+  content: "";
+  width: 49px;
+  height: 37px;
+  margin-bottom: 46px;
+  background-image: url(/img/australia.svg);
+  background-repeat: no-repeat;
+}
+
+.headquarters__continents{
+    margin: 0;
+}
+
+.headquarters__continents--heading {
+    margin-bottom: 24px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+}
+
+.headquarters__continents--info{
+    margin: 0;
+    color: #333D4B;
+}
+
+.headquarters__continents--info+ .headquarters__continents--info{
+    margin-top: 15px;
+}

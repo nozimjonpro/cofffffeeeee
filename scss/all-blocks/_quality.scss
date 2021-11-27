@@ -1,0 +1,31 @@
+.quality .container{
+    display: flex;
+    margin-bottom: 168px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.quality__info{
+    margin-right: 125px;
+    padding-top: 88px;
+padding-left: 85px;
+}
+
+.quality__heading{
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 40px;
+line-height: 48px;
+}
+
+.quality__text{
+    width: 540px;
+margin: 0;
+opacity: 0.8;
+}
+
+.quality__image{
+    position: relative;
+    top: -88px;
+    z-index: 999;
+}

@@ -1,0 +1,27 @@
+.commitment .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin-bottom: 256px;
+}
+
+.commitment__info{
+    margin-left: 125px;
+}
+
+.commitment__heading{
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 40px;
+line-height: 48px;
+color: #333D4B;
+}
+
+.commitment__text{
+    width: 540px;
+    margin: 0;
+    color: #333D4B;
+    opacity: 0.8;
+}
+

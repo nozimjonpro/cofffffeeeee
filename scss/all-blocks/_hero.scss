@@ -1,0 +1,23 @@
+.hero .container {
+    margin-bottom: 136px;
+  padding: 117px 85px;
+  background-image: url(/img/coffee_hero.png);
+  background-size: 1280px 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.hero__heading {
+  width: 493px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.hero__text{
+    width: 445px;
+    margin-top: 0;
+    margin-bottom: 56px;
+}

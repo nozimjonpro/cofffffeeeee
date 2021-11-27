@@ -1,0 +1,27 @@
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 47px 85px;
+  background-color: #2c343e;
+}
+
+.footer .nav__list {
+  margin-left: 102px;
+}
+
+.footer .nav__links:hover {
+  color: #fefcf7;
+}
+
+.footer__social{
+    display: flex;
+    margin: 0;
+    margin-left: 368px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__social--item+ .footer__social--item{
+margin-left: 24px;
+}
