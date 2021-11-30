@@ -1,75 +1,165 @@
 .instruction .container {
   display: flex;
-//   justify-content: space-between;
-  padding-left: 85px;
+  justify-content: space-between;
+  padding: 0 85px;
+  margin-bottom: 168px;
 }
 
-.intruction__left--list {
+.intruction__list {
   margin: 0;
+  margin-right: 125px;
   padding: 0;
   list-style-type: none;
 }
 
-.instruction__left--links {
+.instruction__links {
   display: inline-block;
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
   text-decoration: none;
   color: #333d4b;
   opacity: 0.4;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+  
 }
 
-.instruction__left--links span{
-    margin-right: 25px;
-}
-
-.instruction__left--links::after {
+.instruction__item+ .instruction__item::before {
   display: block;
   content: "";
   width: 255px;
   height: 1px;
   margin: 24px 0;
   background-color: #83888f;
-  opacity: 0.25;
+  opacity: 0.4;
 }
+
+.instruction__links span {
+  margin-right: 25px;
+}
+
+
 
 .instruction__right--list{
-    margin: 0;
-   
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.instruction__right--list+ .instruction__right--list{
-    margin-left: 125px; 
+.instruction__right--item+ .instruction__right--item{
+  margin-top: 88px;
 }
 
-.instruction__right--heading{
-    margin-top: 0;
-    margin-bottom: 56px;
-    font-weight: 900;
-font-size: 40px;
-line-height: 48px;
-color: #83888F;
+.instruction__heading {
+  position: relative;
+  width: 730px;
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888f;
 }
 
-.right__item--list{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.vector{
+  position: absolute;
+  top: 15px;
+  right: 0;
+  margin-left: auto;
+  cursor: pointer;
 }
 
-.right__span+ .right__span{
-    margin-left: 23px;
+.intrucktion__row {
+  display: flex;
 }
 
-.right__span{
-    display: block;
-    width: 228px;
-    padding: 32px 28px;
-    padding-bottom: 84px;
-    background-color: #F4F1EB;
+.instruction__label+ .instruction__label{
+  margin-left: 23px;
+}
+
+.instruction__label{
+  display: none;
+}
+
+.row__open .instruction__label{
+  display: block;
+}
+
+.controller{
+  display: block;
+  width: 228px;
+  height: 250px;
+  padding: 32px 28px;
+  color: #333d4b;
+  background: #f4f1eb;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: #fdd6ba;
+  }
+  .instruction__input:checked + &{
+    background-color: #0e8784;
+    color: #FEFCF7;
+  }
+}
+
+.span__heading {
+  display: block;
+  margin-bottom: 24px;
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.span__text {
+  display: block;
+}
+
+.instruction__right__summary{
+  width: 730px;
+  padding: 27px 64px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.instruction__summary{
+  margin: 0;
+}
+
+.strong{
+  display: block;
+  margin-bottom: 8px;
+  font-family: Barlow;
+  font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.quote{
+font-family: "Fraunces, sans-serif";
+  font-weight: 900;
+font-size: 24px;
+line-height: 40px;
+color: #FFFFFF;
+}
+
+.quote__strong{
+  color: #0E8784;
+}
+
+.instruction__form .button{
+display: block;
+  margin-top: 40px;
+  margin-left: auto;
 }

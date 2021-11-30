@@ -93,72 +93,159 @@
       </section>
 
       <!-- Instruction -->
-<!-- 
+
       <section class="instruction">
         <div class="container">
-          <ol class="intruction__left--list">
-            <li class="instruction__left--item">
-              <a href="#" class="instruction__left--links"
-                ><span class="instruction__left--span">01</span>Preferences</a
-              >
-            </li>
-            <li class="instruction__left--item">
-              <a href="#" class="instruction__left--links"
-                ><span class="instruction__left--span">02</span>Bean Type</a
-              >
-            </li>
-            <li class="instruction__left--item">
-              <a href="#" class="instruction__left--links"
-                ><span class="instruction__left--span">03</span>Quantity</a
-              >
-            </li>
-            <li class="instruction__left--item">
-              <a href="#" class="instruction__left--links"
-                ><span class="instruction__left--span">04</span>Grind Option</a
-              >
-            </li>
-            <li class="instruction__left--item">
-              <a href="#" class="instruction__left--links"
-                ><span class="instruction__left--span">05</span>Deliveries</a
-              >
-            </li>
+          <ol class="intruction__list">
+            <li class="instruction__item"><a class="instruction__links" href="#preferences"><span>01</span>Preferences</a></li>
+            <li class="instruction__item"><a class="instruction__links" href="#bean"><span>02</span>Bean Type</a></li>
+            <li class="instruction__item"><a class="instruction__links" href="#quantity"><span>03</span>Quantity</a></li>
+            <li class="instruction__item"><a class="instruction__links" href="#grind"><span>04</span>Grind Option</a></li>
+            <li class="instruction__item"><a class="instruction__links" href="#delivery"><span>05</span>Deliveries</a></li>
           </ol>
+          <form class="instruction__form" action="https://echo.htmlacademy.ru/">
           <ul class="instruction__right--list">
-            <li class="instruction__right--item">
-              <h2 class="instruction__right--heading">How do you drink your coffee?</h2>
-              <ul class="right__item--list">
-                <li class="right__item--item">
-                  <label class="right__label">
-                    <input type="checkbox" class="right__input visually-hidden" />
-                    <span class="right__span">
-                      <span>Capsule</span>
-                      <span>Compatible with Nespresso systems and similar brewers</span>
-                    </span>
-                  </label>
-                </li>
-                <li class="right__item--item">
-                  <label class="right__label">
-                    <input type="checkbox" class="right__input visually-hidden" />
-                    <span class="right__span">
-                      <span>Filter</span>
-                      <span>For pour over or drip methods like Aeropress, Chemex, and V60</span>
-                    </span>
-                  </label>
-                </li>
-                <li class="right__item--item">
-                  <label class="right__label">
-                    <input type="checkbox" class="right__input visually-hidden" />
-                    <span class="right__span"
-                      ><span>Espresso</span>
-                      <span>Dense and finely ground beans for an intense, flavorful experience</span>
-                    </span>
-                  </label>
-                </li>
-              </ul>
+            <li class="instruction__right--item" id="preferences">
+              <h2 class="instruction__heading">How do you drink your coffee? <img class="vector" src="./img/vector.svg" alt="vector"></h2>
+              <div class="intrucktion__row row__open">
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="click" value="capsule">
+                <span class="controller">
+                <span class="span__heading">Capsule</span>
+                <span class="span__text">Compatible with Nespresso systems and similar brewers</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="click" value="filter">
+                <span class="controller">
+                <span class="span__heading">Filter</span>
+                <span class="span__text">For pour over or drip methods like Aeropress, Chemex, and V60</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="click" value="expresso">
+                <span class="controller">
+                <span class="span__heading">Espresso</span>
+                <span class="span__text">Dense and finely ground beans for an intense, flavorful experience</span>
+              </span>
+              </label>
+            </div>
+            </li>
+            <li class="instruction__right--item" id="bean">
+              <h2 class="instruction__heading">What type of coffee? <img class="vector" src="./img/vector.svg" alt="vector"></h2>
+              <div class="intrucktion__row row__open">
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="decaf" value="single">
+                <span class="controller">
+                <span class="span__heading">Single Origin</span>
+                <span class="span__text">Distinct, high quality coffee from a specific family-owned farm</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="decaf" value="decaf">
+                <span class="controller">
+                <span class="span__heading">Decaf</span>
+                <span class="span__text">Just like regular coffee, except the caffeine has been removed</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="decaf" value="blended">
+                <span class="controller">
+                <span class="span__heading">Blended</span>
+                <span class="span__text">Combination of two or three dark roasted beans of organic coffees</span>
+              </span>
+              </label>
+            </div>
+            </li>
+            <li class="instruction__right--item" id="quantity">
+              <h2 class="instruction__heading">How much would you like?<img class="vector" src="./img/vector.svg" alt="vector"></h2>
+              <div class="intrucktion__row row__open">
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="cup" 250g>
+                <span class="controller">
+                <span class="span__heading">250g</span>
+                <span class="span__text">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="cup" value="500g">
+                <span class="controller">
+                <span class="span__heading">500g</span>
+                <span class="span__text">Perfect option for a couple. Yields about 40 delectable cups.</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="cup" value="1000g">
+                <span class="controller">
+                <span class="span__heading">1000g</span>
+                <span class="span__text">Perfect for offices and events. Yields about 90 delightful cups.</span>
+              </span>
+              </label>
+            </div>
+            </li>
+            <li class="instruction__right--item" id="grind">
+              <h2 class="instruction__heading">Want us to grind them?<img class="vector" src="./img/vector.svg" alt="vector"></h2>
+              <div class="intrucktion__row row__open">
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="filter" value="wholebean">
+                <span class="controller">
+                <span class="span__heading">Wholebean</span>
+                <span class="span__text">Best choice if you cherish the full sensory experience</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="filter" value="filter">
+                <span class="controller">
+                <span class="span__heading">Filter</span>
+                <span class="span__text">For drip or pour-over coffee methods such as V60 or Aeropress</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="filter" cafetiere>
+                <span class="controller">
+                <span class="span__heading">Cafetiére</span>
+                <span class="span__text"> Course ground beans specially suited for french press coffee</span>
+              </span>
+              </label>
+            </div>
+            </li>
+            <li class="instruction__right--item" id="delivery">
+              <h2 class="instruction__heading">How often should we deliver?<img class="vector" src="./img/vector.svg" alt="vector"></h2>
+              <div class="intrucktion__row row__open">
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="month" value="week">
+                <span class="controller">
+                <span class="span__heading">Every week</span>
+                <span class="span__text">$7.20 per shipment. Includes free first-class shipping.</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="month" Create my plan!>
+                <span class="controller">
+                <span class="span__heading">Every 2 weeks</span>
+                <span class="span__text">$9.60 per shipment. Includes free priority shipping.</span>
+              </span>
+              </label>
+              <label class="instruction__label">
+                <input class="instruction__input visually-hidden" type="radio" name="month" value="month">
+                <span class="controller">
+                <span class="span__heading">Every month</span>
+                <span class="span__text"> $12.00 per shipment. Includes free priority shipping.</span>
+              </span>
+              </label>
+            </div>
+            </li>
+            <li class="instruction__right--item instruction__right__summary">
+              <p class="instruction__summary">
+                <strong class="strong">order summary</strong> <q class="quote">I drink my coffee as <strong class="quote__strong">Filter</strong>, with a <strong class="quote__strong">Decaf</strong> type of bean. <strong class="quote__strong">250g</strong> ground ala <strong class="quote__strong">Cafetiare</strong>, sent to me <strong class="quote__strong">Every Week</strong>.</q>
+              </p>
             </li>
           </ul>
+          <button class="button">Create my plan!</button>
+        </form>
         </div>
-      </section> -->
+      </section>
+
     </main>
 
     <!-- Footer -->
