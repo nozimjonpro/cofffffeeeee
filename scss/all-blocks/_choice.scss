@@ -51,28 +51,62 @@
     margin-bottom: 56px;
     background-image: url(/img/card3.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  background-image: url(/img/cars3@2x.svg);
+  /* Retina-specific stuff here */
+} 
 }
 
 .choice__item--second::before{
     display: block;
     content: '';
-    width: 71px;
+    width: 72px;
     height: 72px;
     margin: 0 auto;
     margin-bottom: 56px;
     background-image: url(/img/card2.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  background-image: url(/img/card2@2x.svg);
+  /* Retina-specific stuff here */
+} 
 }
 
 .choice__item--third::before{
     display: block;
     content: '';
-    width: 71px;
-    height: 72px;
+    width: 72px;
+    height: 50px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-top: 11px;
+    margin-bottom: 67px;
     background-image: url(/img/card1.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  background-image: url(/img/card1@2x.svg);
+  /* Retina-specific stuff here */
+} 
 }
 
 .choice__item--heading {

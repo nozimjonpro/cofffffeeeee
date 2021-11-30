@@ -1,20 +1,29 @@
-.intro .container{
-    margin-bottom: 168px;
-    padding: 137px 85px;
-    background-image: url(/img/Bitmap.jpg);
-    background-size: 1280px 450px;
-    background-repeat: no-repeat;
-    background-position: center;
+.intro .container {
+  margin-bottom: 168px;
+  padding: 137px 85px;
+  background-image: url(/img/Bitmap.png);
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url(/img/Bitmap@2x.png);
+    /* Retina-specific stuff here */
+  }
+  background-size: 1280px 450px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.intro__heading{
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-size: 40px;
-line-height: 48px;
+.intro__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 48px;
 }
 
-.intro__text{
-    width: 445px;
-    margin: 0;
+.intro__text {
+  width: 445px;
+  margin: 0;
 }
